@@ -1,5 +1,6 @@
 [build]
-  command = "rm -rf .netlify-build && mkdir .netlify-build && unzip -q site-source.zip -d .netlify-build && cd .netlify-build && npm ci && npm run build:netlify"
+  # Die offen abgelegten Rechtstexte unter app/ ersetzen die Fassungen aus dem ZIP-Archiv.
+  command = "rm -rf .netlify-build && mkdir .netlify-build && unzip -q site-source.zip -d .netlify-build && cp -R app/. .netlify-build/app/ && cd .netlify-build && npm ci && npm run build:netlify"
   publish = ".netlify-build/out"
 
 [build.environment]
