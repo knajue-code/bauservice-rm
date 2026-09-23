@@ -1,0 +1,4 @@
+https://bauservice-rm.netlify.app/* https://bauservice-rm.de/:splat 301!
+http://bauservice-rm.netlify.app/* https://bauservice-rm.de/:splat 301!
+/impressum /impressum.html 200
+/datenschutz /datenschutz.html 200
