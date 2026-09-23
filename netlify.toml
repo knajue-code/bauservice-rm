@@ -1,6 +1,6 @@
 [build]
   # Die offen abgelegten Quelldateien unter app/ und public/ ersetzen die Fassungen aus dem ZIP-Archiv.
-  command = "rm -rf .netlify-build && mkdir .netlify-build && unzip -q site-source.zip -d .netlify-build && cp -R app/. .netlify-build/app/ && cp -R public/. .netlify-build/public/ && cd .netlify-build && npm ci && npm run build:netlify"
+  command = "rm -rf .netlify-build && mkdir .netlify-build && unzip -q site-source.zip -d .netlify-build && cp -R app/. .netlify-build/app/ && cp -R public/. .netlify-build/public/ && cp scripts/generate-social.mjs .netlify-build/generate-social.mjs && cd .netlify-build && npm ci && node generate-social.mjs && npm run build:netlify"
   publish = ".netlify-build/out"
 
 [build.environment]
