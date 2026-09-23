@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     type: "website", locale: "de_DE", url: "/", siteName: "RM Bauservice",
     title: "RM Bauservice | Renovierung & Sanierung in Magstadt",
     description: "Bautrocknung, Boden- und Fugenarbeiten sowie koordinierte Renovierungen und Sanierungen mit qualifizierten Fachpartnern.",
-    images: [{ url: "/images/rm-bauservice-social.jpg", width: 1200, height: 630, alt: "RM Bauservice – Renovierung und Sanierung in Magstadt" }],
+    images: [{ url: "/images/rm-bauservice-logo-share.png", width: 1200, height: 630, type: "image/png", alt: "RM Bauservice – Rino Melis – Alles rund ums Haus" }],
   },
-  twitter: { card: "summary_large_image", title: "RM Bauservice | Renovierung & Sanierung in Magstadt", description: "Bautrocknung, Boden- und Fugenarbeiten sowie koordinierte Renovierungen und Sanierungen.", images: ["/images/rm-bauservice-social.jpg"] },
+  twitter: { card: "summary_large_image", title: "RM Bauservice | Renovierung & Sanierung in Magstadt", description: "Bautrocknung, Boden- und Fugenarbeiten sowie koordinierte Renovierungen und Sanierungen.", images: ["/images/rm-bauservice-logo-share.png"] },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const schema = {
     "@context": "https://schema.org", "@type": "HomeAndConstructionBusiness",
     name: "RM Bauservice – Rino Melis", url: "https://bauservice-rm.de", telephone: "+49 176 60849000", email: "rinomelis@web.de",
-    image: "https://bauservice-rm.de/images/rm-bauservice-social.jpg",
+    image: "https://bauservice-rm.de/images/rm-bauservice-logo-share.png",
     address: { "@type": "PostalAddress", streetAddress: "Rudolf-Diesel-Straße 1", postalCode: "71106", addressLocality: "Magstadt", addressCountry: "DE" },
     areaServed: ["Magstadt", "Renningen", "Leonberg", "Böblingen", "Sindelfingen", "Stuttgart"],
   };
