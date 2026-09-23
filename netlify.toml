@@ -1,6 +1,6 @@
 [build]
-  # Die offen abgelegten Quelldateien unter app/ ersetzen die Fassungen aus dem ZIP-Archiv.
-  command = "rm -rf .netlify-build && mkdir .netlify-build && unzip -q site-source.zip -d .netlify-build && cp -R app/. .netlify-build/app/ && cd .netlify-build && npm ci && npm run build:netlify"
+  # Die offen abgelegten Quelldateien unter app/ und public/ ersetzen die Fassungen aus dem ZIP-Archiv.
+  command = "rm -rf .netlify-build && mkdir .netlify-build && unzip -q site-source.zip -d .netlify-build && cp -R app/. .netlify-build/app/ && cp -R public/. .netlify-build/public/ && cd .netlify-build && npm ci && npm run build:netlify"
   publish = ".netlify-build/out"
 
 [build.environment]
@@ -13,15 +13,3 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
 
-# Die öffentliche Netlify-Adresse dauerhaft auf die Hauptdomain weiterleiten.
-[[redirects]]
-  from = "https://bauservice-rm.netlify.app/*"
-  to = "https://bauservice-rm.de/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "http://bauservice-rm.netlify.app/*"
-  to = "https://bauservice-rm.de/:splat"
-  status = 301
-  force = true
