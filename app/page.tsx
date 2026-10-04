@@ -39,9 +39,9 @@ const references = [
 ];
 
 const testimonials = [
-  { quote: "Absprachen eingehalten, sauber gearbeitet. Und wenn noch eine Frage war, konnte ich Rino direkt erreichen. Würde ich wieder beauftragen.", name: "Jürgen K.", place: "Leonberg", initials: "JK" },
-  { quote: "Die Beauftragung war problemlos. Das Angebot wurde eingehalten. Die Malerarbeiten wurden zuverlässig und sehr gut erledigt. Ich bin vollauf zufrieden und würde diese Firma weiterempfehlen und auch wieder beauftragen.", name: "Joachim E.", place: "Korntal-Münchingen", initials: "JE" },
-  { quote: "Wir sind mit der Sanierung durch RM Bauservice rundum zufrieden. Absprachen wurden eingehalten, Fragen schnell beantwortet und die Arbeiten fachgerecht und mit viel Liebe zum Detail ausgeführt. Auch bei kleinen Herausforderungen wurde schnell und unkompliziert eine gute Lösung gefunden. Wir würden euch jederzeit wieder beauftragen.", name: "Edy", place: "Stuttgart", initials: "E" },
+  { quote: "Absprachen eingehalten, sauber gearbeitet. Und wenn noch eine Frage war, konnte ich Rino direkt erreichen. Würde ich wieder beauftragen.", name: "Jürgen", place: "Leonberg", initials: "J" },
+  { quote: "Die Beauftragung war problemlos. Das Angebot wurde eingehalten. Die Malerarbeiten wurden zuverlässig und sehr gut erledigt. Ich bin vollauf zufrieden und würde diese Firma weiterempfehlen und auch wieder beauftragen.", name: "Joachim", place: "Korntal-Münchingen", initials: "J" },
+  { quote: "Wir sind mit der Sanierung durch RM Bauservice rundum zufrieden. Absprachen wurden eingehalten, Fragen schnell beantwortet und die Arbeiten fachgerecht und mit viel Liebe zum Detail ausgeführt. Auch bei kleinen Herausforderungen wurde schnell und unkompliziert eine gute Lösung gefunden. Wir würden euch jederzeit wieder beauftragen.", name: "Eddie", place: "Stuttgart", initials: "E" },
 ];
 
 function Arrow() { return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>; }
